@@ -1,7 +1,8 @@
 // Wskazniki funkcyjne:
 
 typ_zwracany(*nazwa_wskaznika)(lista_argumentów);
-
+np:
+int (*ptr)(int, int);
 // Callbacks:
 
 1. Definicja funkcji wywolania zwrotnego:

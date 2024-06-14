@@ -1,0 +1,38 @@
+<< KOMPILACJA DO BIB. DYNAMICZNEJ >>
+
+gcc -c -fPIC math_utils.c -o math_utils.o
+gcc -shared -o libmath.dll math_utils.o
+
+[gcc -shared -o libmath.so math_utils.o]
+
+***
+
+-fPIC: Position Independent Code - Kod niezależny od położenia. (wymagane w przypadku bib. dynamicznych)
+
+-shared: flaga realizująca utworzenie bib. dynamicznej
+
+***
+<< SPRAWDZENIE OBECNOŚCI PLIKU >>
+
+ls -l libmath.dll
+
+[ls -l libmath.so]
+
+<< SPRAWDZENIE WŁAŚCIWOŚCI PLIKU (POTWIERDZENIE TYPU BIBLIOTEKI) >> 
+
+file libmath.dll
+
+[file libmath.so]
+
+<< KOMPILACJA PROGRAMU >>
+
+gcc -o app main.c libmath.dll 
+
+***
+
+Przykład z większymi NWD i NWW:
+x:12600
+Y:16800
+
+***
+

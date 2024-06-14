@@ -50,6 +50,4 @@ Bib. statyczne:
 
 9.
 Biblioteka standardowa posiada jeden ściśle zdefiniowany interfejs, ale wiele implementacji (GNU libc, BSD libc, itp.) i może być zarówno biblioteką statyczną, jak i dynamiczną.
-
-
 *\
